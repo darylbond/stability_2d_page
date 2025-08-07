@@ -7,13 +7,13 @@
 
 <head>
     <!-- change this to your project name -->
-    <title>stability_2d</title>
+    <title>Stability 2D</title>
 
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from '/stability_2d.js';
-const wasm = await init({ module_or_path: '/stability_2d_bg.wasm' });
+import init, * as bindings from './stability_2d.js';
+const wasm = await init({ module_or_path: './stability_2d_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -23,9 +23,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base href="/" />
+    <base href="./" />
 
-    <link rel="icon" href="/favicon.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
+    <link rel="icon" href="./favicon.ico"/>
 
 
     
@@ -127,7 +127,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/stability_2d.js" crossorigin="anonymous" integrity="sha384-C8gGGNQDl5d2GPdObSTONQOC5fZ1A8vqmuM0OYAiPDlF+ZVYLrkmiZGFWZ4L5imX"><link rel="preload" href="/stability_2d_bg.wasm" crossorigin="anonymous" integrity="sha384-b4w89FHecAMudKtwA/KpN9Ln+euKWs+BCvS5aoyokRPhlYGB4VY18M+uNHQK4wmp" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="./stability_2d.js" crossorigin="anonymous"><link rel="preload" href="./stability_2d_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->

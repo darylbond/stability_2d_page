@@ -1,6 +1,6 @@
 {
-  "name": "egui Template PWA",
-  "short_name": "egui-template-pwa",
+  "name": "Stability 2D",
+  "short_name": "Stability2D",
   "icons": [
     {
       "src": "./assets/icon-256.png",
